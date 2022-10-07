@@ -27,7 +27,7 @@ namespace AppTests.ModelTests
         {
             var parms = parmsObj as object[];
 
-            Assert.Throws<ArgumentException>(() => new Context((StreamEvent)parms[0],
+            Assert.Throws<ArgumentNullException>(() => new Context((StreamEvent)parms[0],
                                                     (StreamState)parms[1],
                                                     (StreamMetrics)parms[2]));
         }
