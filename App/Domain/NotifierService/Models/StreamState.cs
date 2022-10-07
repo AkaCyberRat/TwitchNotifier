@@ -34,6 +34,46 @@ namespace App.Domain.NotifierService.Models
                         int viewerCount,
                         DateTime startedAt)
         {
+            if (string.IsNullOrWhiteSpace(userName))
+            {
+                throw new ArgumentException($"'{nameof(userName)}' cannot be null or empty.", nameof(userName));
+            }
+
+            if (string.IsNullOrWhiteSpace(userId))
+            {
+                throw new ArgumentException($"'{nameof(userId)}' cannot be null or empty.", nameof(userId));
+            }
+
+            if (string.IsNullOrWhiteSpace(gameId))
+            {
+                throw new ArgumentException($"'{nameof(gameId)}' cannot be null or empty.", nameof(gameId));
+            }
+
+            if (string.IsNullOrWhiteSpace(gameName))
+            {
+                throw new ArgumentException($"'{nameof(gameName)}' cannot be null or empty.", nameof(gameName));
+            }
+
+            if (string.IsNullOrWhiteSpace(title))
+            {
+                throw new ArgumentException($"'{nameof(title)}' cannot be null or empty.", nameof(title));
+            }
+
+            if (string.IsNullOrWhiteSpace(thumbnailUrl))
+            {
+                throw new ArgumentException($"'{nameof(thumbnailUrl)}' cannot be null or empty.", nameof(thumbnailUrl));
+            }
+
+            if (tagIds is null)
+            {
+                throw new ArgumentNullException(nameof(tagIds));
+            }
+
+            if (string.IsNullOrWhiteSpace(type))
+            {
+                throw new ArgumentException($"'{nameof(type)}' cannot be null or empty.", nameof(type));
+            }
+
             UserName = userName;
             UserId = userId;
             GameId = gameId;
@@ -48,6 +88,10 @@ namespace App.Domain.NotifierService.Models
 
         public StreamState(string userName)
         {
+            if (string.IsNullOrEmpty(userName))
+            {
+                throw new ArgumentException($"'{nameof(userName)}' cannot be null or empty.", nameof(userName));
+            }
             UserName = userName;
         }
     }
