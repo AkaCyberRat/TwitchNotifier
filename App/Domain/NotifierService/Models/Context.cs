@@ -1,4 +1,6 @@
-﻿namespace App.Domain.NotifierService.Models
+﻿using System;
+
+namespace App.Domain.NotifierService.Models
 {
     public class Context
     {
@@ -7,16 +9,16 @@
         public StreamMetrics StreamMetrics { get; }
         
 
-        public Context(StreamEvent streamEvent, StreamState streamState, StreamMetrics streamMetrics)
+        public Context(StreamEvent streamEvent, StreamState streamState, StreamMetrics streamMetrics = null)
         {
+            if (streamState is null)
+            {
+                throw new ArgumentNullException(nameof(streamState));
+            }
+
             StreamEvent = streamEvent;
             StreamState = streamState;
             StreamMetrics = streamMetrics;
-        }
-
-        private Context()
-        {
-
         }
     }
 }
