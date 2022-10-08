@@ -3,7 +3,7 @@ using NUnit.Framework;
 using System;
 using System.Collections;
 
-namespace AppTests.ModelTests
+namespace AppUnitTests.ModelTests
 {
     [TestFixture]
     public class StreamStateTests

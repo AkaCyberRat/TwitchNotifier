@@ -5,7 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 
-namespace AppTests.DomainTests.ModelTests
+namespace AppUnitTests.DomainTests.ModelTests
 {
     [TestFixture]
     public class StreamMetricsTests
