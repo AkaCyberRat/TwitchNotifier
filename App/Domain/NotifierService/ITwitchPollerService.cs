@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace App.Domain.NotifierService
 {
-    public interface ITwitchPoller
+    public interface ITwitchPollerService
     {
         Task<StreamState[]> GetStreamStates(string[] usernames);
     }
