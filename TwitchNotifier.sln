@@ -7,13 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App", "App\App.csproj", "{F
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTests", "AppTests\UnitTests.csproj", "{73C6F9C0-EFCA-4845-8F52-4BB25119E3D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{1A27D62A-85E3-43AE-AA62-8928B3C817C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{1A27D62A-85E3-43AE-AA62-8928B3C817C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Concrete", "Concrete\Concrete.csproj", "{C893B4EE-6B5A-4C9E-9DF3-581FA8E75F15}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concrete", "Concrete\Concrete.csproj", "{C893B4EE-6B5A-4C9E-9DF3-581FA8E75F15}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistent", "Persistent\Persistent.csproj", "{5EA5D5AA-960B-4974-BF98-F2C61489FC68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistent", "Persistent\Persistent.csproj", "{5EA5D5AA-960B-4974-BF98-F2C61489FC68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{D8B4D627-7A6F-4D3E-AE90-70637DCF979E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "WebApi\WebApi.csproj", "{D8B4D627-7A6F-4D3E-AE90-70637DCF979E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
